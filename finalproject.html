@@ -1,0 +1,167 @@
+<!DOCTYPE html> <!--This tag defines this as an html document-->
+
+<html> <!--This is the root element of the html page-->
+<head> <!--This contains meta information about the document-->
+<title> TouchTeacher </title> <!--This specifies a title for the document-->
+<meta name="viewport" content="width=device-width, initial-scale=1"> <!--Metadata = data about data. Meta tags provide metadata about the HTML document.-->
+</head> <!--This closes the head section-->
+
+<style> /* This is a css element that defines style info for an html doc */
+ul { /*This defines and unordered list. This means the following elements are not in any particular order.*/
+  list-style-type: none; /*This specifies the type of list-item marker in a list.*/
+    margin: 0; /*This is used to generate space around items in the list.*/
+    padding: 0;
+    border: 0;
+    overflow: hidden; /*This specifies what happens if content overflows an element's box-either to clip content or add scrollbars. Hidden means the overflow is clipped, and the rest of the content will be invisible.*/
+    background-color: #cefdce; /*This specifies background color*/
+    font-size: 16px;
+    
+}
+
+li { /*This defines the characteristics of each list item.*/
+    float: left; /*This is used to position elements of the navigation bar to the left*/
+}
+
+li a { /*This describes the elements of the list that are link*/
+    display: block; /*Assuming all html elements are circumscribed by a box, this specifies the type of box used. Here, it is a block, as opposed to a straight line.*/
+    color: black; /*This defines the color for the text in this element*/
+    text-align: center; /*This aligns the text in this element to the center*/
+    padding: 14px 16px; /*This is used to generate space around content. Padding is the inner space of an element, as opposed to margin, which is the outer space of an element.*/
+    text-decoration: none; /*This specifies the decoration added to the text: none at all!*/
+    font-family: Tahoma;
+  }
+
+li a:hover:not(.active) { /*Hover describes what happens when you hover over an element in the navigation bar. Active refers to what happens when you click the element. Not tells us what happens when it is not being clicked, only hovered over.*/
+    background-color: white; /*Sets background color to white.*/
+}
+
+.actives { /*This is a function for when you click on the element*/
+    background-color: palegreen; /*Sets background color to light blue*/
+}
+
+* {box-sizing:border-box} /*dfkfh*/
+body {font-family: Verdana,sans-serif;}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  text-align: center;
+  margin: 50px;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade; /*This is the way one slide transitions into another. Webkit */
+  -webkit-animation-duration: 1.5s; /*This specifies the duration of the fade*/
+  animation-name: fade; /*Specifies a name for the @keyframes animation*/
+  animation-duration: 1.5s; /*The duration of fade*/
+}
+
+.active {
+  background-color: #717171;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+</style>
+
+<link rel="stylesheet" type="text/css" href="finalproject.css">  <!--This creates a link to the css. Rel=specifies relationship between the current document and linked document.-->
+<body>
+  <nav>
+  <ul>
+    <li><a class="actives" href="finalproject.html">Home</a></li>
+    <li><a href="product.html">Product</a></li>
+    <li><a href="journery.html">Journey</a></li>
+    <li><a href="awareness.html">Awareness</a></li>
+    <li><a href="aboutus.html">About Us</a></li>
+  </ul>
+</nav>
+<body>
+
+<h1> TouchTeacher </h1>
+
+<p> Welcome to the TouchTeacher site! This website is dedicated to the blind children of the world. Our team has developed a unique toy specialized to meet the needs of blind and visually impaired children. To find out more about the features and inspiration behind our product, please visit our Product  page. To discover how we developed this product in detail, check out our Journey page. To learn more about blindness, go to our Awareness page.  For a brief description of our team members, visit the About Us page. </p>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="img_1270.jpg" style="width:50%">
+</div>
+
+<div class="mySlides fade">
+  <img src="img_1271.jpg" style="width:50%">
+</div>
+
+<div class="mySlides fade">
+  <img src="img_1274.jpg" style="width:50%">
+</div>
+
+<div class="mySlides fade">
+  <img src="img_1272.jpg" style="width:50%">
+</div>
+
+<div class="mySlides fade">
+  <img src="img_1275.jpg" style="width:50%">
+</div>
+
+  <div class="mySlides fade">
+    <img src="img_1273.jpg" style="width:50%">
+  </div>
+</div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+ <br>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 5000); // Change image every 5 seconds
+}
+
+</script>
+</body>
+</html>

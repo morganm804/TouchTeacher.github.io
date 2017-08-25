@@ -1,0 +1,42 @@
+h1 {color:black;}
+body {background-color:#cefdce;}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  border:1px solid white;
+  background-color:white;
+  font-family:Tahoma;
+}
+
+h2 {
+  text-align:left;
+  font-family: Tahoma;
+
+}
+p {
+  text-align: center;
+  font-family: Tahoma;
+  font-size: 18px
+  text-indent: 50px;
+}
+
+h3 {
+  font-weight: lighter;
+  font-family: Tahoma;
+}
+
+h4 {
+  text-align: left;
+  font-weight: normal;
+  font-family: Tahoma;
+}
+
+h5 {
+  color: gray;
+  font-family: Tahoma;
+}
+
+ul {
+  font-size: 16px;
+}

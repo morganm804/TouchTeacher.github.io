@@ -1,0 +1,50 @@
+h1 {color:black;}
+body {background-color:#cefdce;}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  border:1px solid white;
+  background-color:white;
+  font-family: Tahoma;
+}
+
+h2 {
+  font-family: Tahoma;
+}
+
+h3 {
+  font-family: Tahoma;
+  font-size: 18;
+  text-indent: 50px;
+}
+
+p{
+  font-family: Tahoma;
+}
+
+li {
+  font-family: Tahoma;
+
+}
+button {
+    background-color: palegreen; /* Green */
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+  img {
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
+ul {
+  font-size: 16px;
+}

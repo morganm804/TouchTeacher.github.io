@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+<title> TouchTeacher </title>
+  <style>
+
+  ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      overflow: hidden;
+      background-color: lightcyan;
+      font-size: 16px;
+
+  }
+
+  li {
+      float: left;
+  }
+
+  li a {
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-family: Tahoma;
+  }
+
+  li a:hover:not(.active) {
+      background-color: white;
+  }
+
+  .active {
+      background-color: lightblue;
+  }
+  </style>
+
+  <link rel="stylesheet" type="text/css" href="product.css">
+  <!DOCTYPE html>
+  <html>
+  <head>
+  <style>
+  ul {
+    list-style-type: none;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      overflow: hidden;
+      background-color: #cefdce;
+      font-size: 16px;
+
+  }
+
+  li {
+      float: left;
+  }
+
+  li a {
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-family: Tahoma;
+  }
+
+  li a:hover:not(.active) {
+      background-color: white;
+  }
+
+  .active {
+      background-color: palegreen;
+  }
+
+  </style>
+
+  </head>
+
+  <body>
+    <nav>
+    <ul>
+      <li><a class="active" href="finalproject.html">Home</a></li>
+      <li><a href="product.html">Product</a></li>
+      <li><a href="journery.html">Journey</a><li>
+      <li><a href="awareness.html">Awareness</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+
+    </ul>
+  </nav>
+
+<h1>Product</h1>
+
+
+<h2> Our Story: </h2>
+<p>Last summer I, Morgan McNulty, volunteered to work at my church’s free summer camp. On the second day, I found out I was going to be an aide for a blind child attending the camp. During the week, I got to know him and his unique struggles as a blind child. I realized that despite the humongous toy market, there were not many toys accessible to children like him. </p>
+<p>When it came time to think about the Girls Who Code final project, I remembered my experience from last summer. I came up with the idea of a toy for blind children which incorporates technology to make it more accessible.  As our group was brainstorming, we learned that sounds and textures are very important to blind children as they experience things. We also realized there was no fun way for children to learn braille. We came up with the idea of a pillow with textured letters and braille on the surface. When the letters are pressed, the speaker would play the sound of the letter.  </p>
+
+<h2> Product Description: </h2>
+<p>TouchTeacher is a toy designed to help blind children learn the regular and braille alphabet. This toy is a soft pillow with  textured letters and the corresponding braille letters adjacent to them. When each letter is pressed, the sound pertaining to that letter is played. </p>
+
+<h2> Features: </h2>
+<p><li> soft pillow </li> <br> </p>
+<p><li> textured letters of the alphabet </li> <br> </p>
+<p><li> braille letters </li> <br> </p>
+<p><li> plays the sound of each letter </li> <br></p>
+
+<div class=buttons>
+  <audio id="a"><source src="T00.wav" type="audio/wav"></audio>
+    <audio id="b"><source src="T01.wav" type="audio/wav"></audio>
+      <audio id="c"><source src="T02.wav" type="audio/wav"></audio>
+        <audio id="d"><source src="T03.wav" type="audio/wav"></audio>
+          <audio id="e"><source src="T04.wav" type="audio/wav"></audio>
+            <audio id="f"><source src="T05.wav" type="audio/wav"></audio>
+              <audio id="g"><source src="T06.wav" type="audio/wav"></audio>
+                <audio id="h"><source src="T07.wav" type="audio/wav"></audio>
+                <audio id="i"><source src="T08.wav" type="audio/wav"></audio>
+
+</div>
+
+<h2> Try It Yourself: </h2>
+<p> Click the letter to play the corresponding sound.  <br> </p> <br>
+
+                    <button onclick="playAudioA()" type="button">A</button>
+                    <button onclick="playAudioB()" type="button">B</button>
+                    <button onclick="playAudioC()" type="button">C</button><br><br>
+                    <button onclick="playAudioD()" type="button">D</button>
+                    <button onclick="playAudioE()" type="button">E</button>
+                    <button onclick="playAudioF()" type="button">F</button><br><br>
+                    <button onclick="playAudioG()" type="button">G</button>
+                    <button onclick="playAudioH()" type="button">H</button>
+                    <button onclick="playAudioI()" type="button">I</button>
+
+                    <script>
+                    var a = document.getElementById("a");
+                    var b = document.getElementById("b");
+                    var c = document.getElementById("c");
+                    var d = document.getElementById("d");
+                    var e = document.getElementById("e");
+                    var f = document.getElementById("f");
+                    var g = document.getElementById("g");
+                    var h = document.getElementById("h");
+                    var i = document.getElementById("i");
+
+                    function playAudioA() {
+                      a.play();
+                    }
+                    function playAudioB() {
+                      b.play();
+                    }
+                    function playAudioC() {
+                      c.play();
+                    }
+                    function playAudioD() {
+                      d.play();
+                    }
+                    function playAudioE() {
+                      e.play();
+                    }
+                    function playAudioF() {
+                      f.play();
+                    }
+                    function playAudioG() {
+                      g.play();
+                    }
+                    function playAudioH() {
+                      h.play();
+                    }
+                    function playAudioI() {
+                      i.play();
+                    }
+
+                    </script>
+
+<h2> Final Product: </h2>
+<img src="img_911.jpg" width="550" height="480"
+  </body>
+</html>

@@ -1,0 +1,19 @@
+h1 {color:black;}
+body {background-color:#cefdce;}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  border:1px solid white;
+  background-color:white;
+}
+
+p {
+  text-align: center;
+  font-size: 20px;
+  font-family: Tahoma;
+}
+
+ul {
+  font-size: 16px;
+}

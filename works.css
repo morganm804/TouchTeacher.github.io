@@ -1,0 +1,11 @@
+body {background-color:lightblue;}
+.image {
+  display: block;
+  margin: auto;
+}
+h1 {
+  text-align: center;
+  font-size: 40px;
+  border:1px solid white;
+  background-color:white;
+}

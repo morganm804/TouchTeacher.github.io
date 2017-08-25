@@ -1,0 +1,26 @@
+h1 {color:Black;}
+body {background-color:#cefdce;}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  border:1px solid white;
+  background-color:white;
+  font-family: Tahoma;
+}
+
+p{
+  font-family:Tahoma;
+  text-align: center;
+  font-size: 23px;
+  font-weight: bolder;
+}
+
+img {
+  display: block;
+  margin: auto;
+}
+
+ul {
+  font-size: 16px;
+}
